@@ -145,10 +145,12 @@ Spatial GroupKFold
 После OOF-оценки лучшая модель обучается на всех объектах с известной высотой и применяется к `predict_set`.
 
 ### 9. Экспорт результата
-Итоговый слой сохраняется в формате GeoPackage:
+Итоговый слой сохраняется в формате GeoPackage, также сохраняется карта высотности Санкт-Петербурга и итоговая .csv таблица со всеми постройками и высотами:
 
 ```bash
 spb_buildings_final.gpkg
+spb_buildings_unified.csv
+spb_building_heights.html
 ```
 
 ## Защита от data leakage
@@ -253,6 +255,7 @@ pip install -r requirements.txt
 │   └── cup_it_example_src_B.csv
 └── outputs/
     ├──spb_buildings_unified.csv
+    ├──spb_buildings_final.gpkg
     └──spb_building_heights.html
 ```
 
