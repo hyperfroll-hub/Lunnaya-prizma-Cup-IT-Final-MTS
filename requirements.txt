@@ -1,0 +1,16 @@
+pandas
+numpy
+geopandas
+shapely>=2.0
+pyproj
+folium
+matplotlib
+seaborn
+scikit-learn
+lightgbm
+catboost
+networkx
+rtree
+jupyter
+notebook
+ipython
